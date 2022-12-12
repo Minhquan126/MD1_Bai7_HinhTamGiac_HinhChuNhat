@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre><script>
+    let M1 = +prompt('nhap so canh tam giac 1')
+    for (let i = 0; i < M1; i++) {
+        for (let j = 0; j < i; j++) {
+            document.write('*')
+        } document.writeln()
+    }
+    let M2 = +prompt('nhap so canh tam giac 2')
+    for (let i = 0; i < M2; i++) {
+        for (let j = 0; j < (M2 - i); j++) {
+            document.write('*')
+        } document.writeln()
+    }
+
+        let N = +prompt('nhap so canh tam giac 3')
+        for (let i = 1; i <= N; i++) {
+            for (let j = 0; j < N; j++) {
+                if (j < (N - i)) {
+                    document.write(' ')
+                } else {
+                    document.write('*')
+                }
+            }
+            document.writeln();
+
+        }
+
+        let N1 = prompt('nhap so canh tam giac 4')
+            for (let i = 0; i < N1; i++) {
+                for (let j = 0; j < N1; j++) {
+                    if (j < i){
+                        document.write(' ')
+                    } else {
+                        document.write('*')
+                    }
+                }
+        document.writeln()
+            }
+        let N2 = +prompt("nhap canh 1 hinh chu nhat")
+        let N3 = +prompt('nhap canh 2 hinh chu nhat')
+        for (let i = 1; i <= N2; i++) {
+            for (let j = 1; j <= N3; j++) {
+                if (i == 1 || i == N2 || j == 1|| j == N3) {
+                    document.write(' * ')
+                } else {
+                    document.write('   ')
+                }
+
+            }
+            document.writeln()
+        }
+</script>
+</pre>
+
+</body>
+</html>

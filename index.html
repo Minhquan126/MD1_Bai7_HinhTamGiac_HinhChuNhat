@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let soLuong = +prompt('Nhap so can in ra')
+    let n1 = 0;
+    let n2 = 1;
+    let sum;
+    for (let i = 1; i++) {
+        sum = n1 + n2;
+        n1 = n2
+        n2 = sum
+        if ( sum % 5 == 0){
+            document.write(sum)
+            break}
+        }
+    let so = +prompt('Nhap so can tinh giai thua')
+    let sum = 0;
+    for (let i = 0; i <= so; i++) {
+        sum += i
+
+    }document.write(sum)
+// // let i = 0;
+// // while (i<6){
+// <!--    -->
+<!--}-->
+    //
+    let N = prompt('Nhap so')
+    for (let i = 0; i < N; i++) {
+        if (i % 3 == 0) {
+            document.write('Fizz')
+        } else if (i % 5 == 0) {
+            document.write('Buzz')
+    } else if (i % 3 == 0 && i % 5 == 0){
+            document.write('FizzBuzz')
+        }
+        else {
+            document.write(i)
+        }
+            }
+
+
+
+
+</script>
+</body>
+</html>
